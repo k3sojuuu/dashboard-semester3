@@ -1,0 +1,75 @@
+.login-page {
+    font-family: Inter, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/public/imgPage/anhHome.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+  }
+  
+  .welcome-text {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px; /* Tạo khoảng cách giữa dòng chữ và form */
+  }
+  
+  .login-box {
+    padding: 20px;
+    margin-bottom: 260px;
+  }
+  
+  .input-group {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  label{
+    color: aliceblue;
+  }
+  
+  .input-group input {
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #0ec469;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .bg-pan-left {
+    -webkit-animation: bg-pan-left 8s both; 
+    animation: bg-pan-left 8s both;
+  }
+  
+  @-webkit-keyframes bg-pan-left {
+    0% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+  }
+  
+  @keyframes bg-pan-left {
+    0% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+  }

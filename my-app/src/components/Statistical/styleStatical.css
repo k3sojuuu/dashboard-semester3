@@ -1,0 +1,61 @@
+.charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    border: 1px solid rgb(255, 255, 255); /* Thêm viền để dễ nhận biết */
+    margin: 20px;
+}
+
+.chart {
+    width: 43%;
+    margin-bottom: 20px;
+    border: 1px solid rgb(245, 245, 245); /* Thêm viền để dễ nhận biết */
+    padding: 10px; /* Thêm padding cho các chart */
+}
+
+.chart p{
+    text-align: center;
+    color: rgb(127, 127, 127);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .chart {
+        width: 100%;
+    }
+}
+.title-sta{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(92, 92, 92);
+}
+
+.chart1 h2{
+    color: rgb(60, 60, 60);
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.chart1 {
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+}
+
+.chart2 h1{
+    color: rgb(112, 112, 112);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 40px;
+}
+.statical{
+    margin-top: 50px;
+}
+

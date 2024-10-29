@@ -6,14 +6,14 @@ const Chart1: React.FC = () => {
     grid: { top: 8, right: 8, bottom: 24, left: 36 },
     xAxis: {
       type: 'category',
-      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+      data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul','Aug','Sep','Oct'],
     },
     yAxis: {
       type: 'value',
     },
     series: [
       {
-        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        data: [10199, 11632, 11901, 9934, 11290, 8330, 9420,8200, 9321, 11101, 7344],
         type: 'line',
         smooth: true,
       },

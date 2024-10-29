@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import ReactECharts from 'echarts-for-react';
 
 
-const Chart2: React.FC = () => {
+const Chart22: React.FC = () => {
   const option = {
     title : {
-      text: 'Thống kê quý I',
+      text: 'Thống kê quý II',
       subtext: 'Tổng số tàu chạy',
       x:'center'
     },
@@ -68,10 +68,9 @@ const Chart2: React.FC = () => {
           'legendselectchanged': onChartLegendselectchanged
          }}
       />
-      {/* <div>Click Count: {count}</div> */}
-      <div><p>Tổng số lượng chuyến tàu trong quý I: 150</p></div>
+      <p>Tổng số lượng chuyến tàu trong quý II: 154</p>
     </>
   );
 };
 
-export default Chart2;
+export default Chart22;

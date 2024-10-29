@@ -1,0 +1,79 @@
+/* Layout chính: Sử dụng flex để bố trí theo chiều ngang */
+.homepage-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Phần filter cố định bên trái */
+.filter-section {
+    margin-top: 50px;
+    width: 250px;
+    background: linear-gradient(90deg, #306193, #6aa8f2, #9cc0f5);
+    padding: 20px;
+    border-radius: 8px;
+    position: sticky;
+    top: 20px; /* Giữ cố định thanh filter khi scroll */
+    height: fit-content;
+    color: #000000;
+}
+
+/* Header của filter */
+.filter-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Các nhóm lựa chọn filter */
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.nav1{
+    background-color: #84b4e6;
+}
+/* Nhãn cho các lựa chọn filter */
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Dropdown cho các filter */
+.filter-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Phần bảng dữ liệu */
+.table-section {
+    margin-top: 50px;
+    flex-grow: 1;
+    overflow-x: auto; /* Đảm bảo bảng không bị tràn */
+}
+
+/* Bảng dữ liệu */
+.train-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px; /* Đảm bảo bảng có chiều rộng tối thiểu */
+}
+
+/* Header và các ô của bảng */
+.train-table th, .train-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Header của bảng */
+.train-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Hàng lẻ có màu nền khác */
+.train-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

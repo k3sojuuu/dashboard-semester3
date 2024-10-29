@@ -25,39 +25,41 @@ function App() {
 
   return (
     <div className="App">
-        {/* Ẩn thanh điều hướng nếu người dùng chưa đăng nhập */}
-        {isAuthenticated && (
-          <nav>
-            <ul>
-              <li>
-                <Link to="/home">Home</Link>
-              </li>
-              <li>
-                <Link to="/statical">Statical</Link>
-              </li>
-              <li>
-                <Link to="/" onClick={handleLogout} >
-                  <FontAwesomeIcon icon={faSignOutAlt} />
-                  <span style={{ marginLeft: '5px' }}></span>
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        )}
-
-        <Routes>
-          {/* Trang Login */}
-          <Route path="/" element={<LoginPage onLogin={handleLogin} />} />
-
-          {/* Chỉ truy cập được Home và Statical khi đã đăng nhập */}
-          {isAuthenticated && (
-            <>
-              <Route path="/home" element={<HomePage />} />
-              <Route path="/statical" element={<Statical />} />
-            </>
-          )}
-        </Routes>
-    </div>
+    {/* Ẩn thanh điều hướng nếu người dùng chưa đăng nhập */}
+    {isAuthenticated && (
+      <nav>
+        <ul className="left">
+          <li>
+            <Link to="/home">Home</Link>
+          </li>
+          <li>
+            <Link to="/statical">Statical</Link>
+          </li>
+        </ul>
+        <ul className="right">
+          <li>
+            <Link to="/" onClick={handleLogout}>
+              <FontAwesomeIcon icon={faSignOutAlt} />
+              <span style={{ marginLeft: '5px' }}>Logout</span>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    )}
+  
+    <Routes>
+      {/* Trang Login */}
+      <Route path="/" element={<LoginPage onLogin={handleLogin} />} />
+  
+      {/* Chỉ truy cập được Home và Statical khi đã đăng nhập */}
+      {isAuthenticated && (
+        <>
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/statical" element={<Statical />} />
+        </>
+      )}
+    </Routes>
+  </div>
   );
 }
 

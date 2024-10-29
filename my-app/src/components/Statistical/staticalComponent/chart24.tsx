@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import ReactECharts from 'echarts-for-react';
 
 
-const Chart2: React.FC = () => {
+const Chart24: React.FC = () => {
   const option = {
     title : {
-      text: 'Thống kê quý I',
+      text: 'Thống kê quý IV',
       subtext: 'Tổng số tàu chạy',
       x:'center'
     },
@@ -25,11 +25,11 @@ const Chart2: React.FC = () => {
       radius : '55%',
       center: ['50%', '60%'],
       data:[
-        {value:33, name:'SE1'},
+        {value:40, name:'SE1'},
         {value:31, name:'SE2'},
         {value:23, name:'SE3'},
-        {value:13, name:'SE4'},
-        {value:54, name:'SE5'}
+        {value:20, name:'SE4'},
+        {value:22, name:'SE5'}
       ],
       itemStyle: {
         emphasis: {
@@ -68,10 +68,9 @@ const Chart2: React.FC = () => {
           'legendselectchanged': onChartLegendselectchanged
          }}
       />
-      {/* <div>Click Count: {count}</div> */}
-      <div><p>Tổng số lượng chuyến tàu trong quý I: 150</p></div>
+      <p>Tổng số lượng chuyến tàu trong quý IV: 136</p>
     </>
   );
 };
 
-export default Chart2;
+export default Chart24;

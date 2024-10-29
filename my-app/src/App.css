@@ -1,4 +1,4 @@
-nav {
+/* nav {
   background-color: #333;
   padding: 1rem;
 }
@@ -23,4 +23,52 @@ a {
 
 a:hover {
   color: #00bfff;
+} */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #014486, #6aa8f2, #9cc0f5);
+  box-shadow: 0px 2px 4px rgba(230, 228, 228, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  opacity: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul.left {
+  display: flex;
+  gap: 15px;
+}
+
+nav ul.right {
+  margin-left: 1200px;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #badafc;
 }
